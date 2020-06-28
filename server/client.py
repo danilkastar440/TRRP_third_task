@@ -6,7 +6,7 @@ import calculator_pb2
 import calculator_pb2_grpc
 
 # open a gRPC channel
-channel = grpc.insecure_channel('localhost:50051')
+channel = grpc.insecure_channel('pantova.digital:50051')
 
 # create a stub (client)
 stub = calculator_pb2_grpc.CalculatorStub(channel)
